@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تتبع الشحنة</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: sans-serif;
+            color: #191C1F;
+        }
+        .breadcrumb-section {
+            background-color: #F2F4F5;
+            padding: 20px 0;
+            margin-bottom: 60px;
+        }
+        .breadcrumb-item i { color: #5F6C72; }
+        .breadcrumb-item a { text-decoration: none; color: #5F6C72; font-size: 14px; }
+        .breadcrumb-item.active { color: #2DA5F3; }
+        .track-title {
+            font-weight: 600;
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        .track-desc {
+            color: #5F6C72;
+            max-width: 800px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+        .form-text {
+            font-weight: 500;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .form-control {
+            border: 1px solid #E4E7E9;
+            border-radius: 2px;
+            padding: 12px;
+            font-size: 14px;
+        }
+        .form-control:focus {
+            border-color: #FA8232;
+            box-shadow: none;
+        }
+        .input-hint {
+            color: #77878F;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+        .btn-track {
+            background-color: #FA8232;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 14px 32px;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 24px;
+            transition: 0.3s;
+        }
+        .btn-track:hover {
+            background-color: #e6762a;
+            color: white;
+        }
+          .icon{
+rotate: -28deg;
+font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="#"><i class="bi bi-house-door"></i> الصفحة الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="#"></a></li>
+                    <li class="breadcrumb-item active" aria-current="page">تتبع الطلب</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="track-title">تتبع شحنة أليفك <label class="icon">🐾</label></h1>
+                <p class="track-desc">
+                    هل تنتظر وصول مستلزمات صديقك الأليف؟ لمعرفة أين وصلت الشحنة، يرجى إدخال رقم الطلب الموجود في رسالة التأكيد وبريدك الإلكتروني.
+                </p>
+                <div class="row g-4">
+                    <div class="col-md-5">
+                        <label for="orderID" class="form-text">رقم طلب الاليف</label>
+                        <input type="text" id="orderID" class="form-control" placeholder="الرقم...">
+                        <div class="input-hint">
+                            <i class="bi bi-info-circle"></i> رقم الطلب الذي أرسلناه لك عند إتمام عملية الشراء.
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="orderEmail" class="form-text">البريد الالكتروني المسجل</label>
+                        <input type="email" id="orderEmail" class="form-control" placeholder="البريد الالكتروني">
+                    </div>
+                </div>
+<a href="details.html" class="text-muted text-decoration-none">
+                <button class="btn btn-track">
+                    تتبع الطلب الآن <i class="bi bi-arrow-left"></i>
+                </button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
